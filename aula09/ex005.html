@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Iniciando estudos com DOM
+    </h1>
+    <p>
+        Aqui vai o resultado
+    </p>
+    <p>
+        Aprendendo a usar o <strong>DOM</strong> em JavaScript.
+    </p>
+    <div class="msg">
+        Clique em mim
+    </div>
+    <script>
+        // MARCA
+        var p1 = document.getElementsByTagName('p')[1] 
+        //Dessa forma estamos selecionando o paragráfo. Aqui [] expecíficamos qual o paragráfo que iremos selecionar.
+        window.document.write()
+        document. write('Está escrito assim: ' + p1.innerHTML ) 
+        //Mostra o conteúdo que está no paragráfo selecionado.
+
+        /* ID
+        var d = document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estamos aguardando...' 
+        window.document.getElementById('msg').innerText = 'Estamos aguardando...' */
+        
+        /* NAME
+        var n = document.getElementsByName('msg')[0]
+        n.innerText = 'Olá'*/
+
+        /* CLASS
+        var c = document.getElementsByClassName('msg')[0]
+        c.innerText = 'Olá'*/
+
+        // SELETOR
+        var s = document.querySelector('div.msg') // class(.); id(#)
+        s.style.background = 'green'
+
+        var corpo = document.body
+        /*Aqui estamos formantando o estilo.
+        corpo.style.background = 'black'
+        p1.style.color = 'red'*/
+    </script>
+</body>
+</html>
